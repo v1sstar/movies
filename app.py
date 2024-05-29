@@ -11,7 +11,7 @@ st.title("Predict reviews' sentiment")
 review = st.text_input("Ingrese la reseña: ")
 review_array = np.array([review])
 
-with open("model.pickle", "rb") as f:
+with open("model (3).pickle", "rb") as f:
     model = pickle.load(f)
 
 if st.button("Predicción"):
